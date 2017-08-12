@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+        <meta name="keywords" content="Swipe jQuery Library">
+
+        <title>Swipe jQuery Library</title>
+        <meta name="description" content="Swipe jQuery Library">
+
+        <style>
+
+            .swipe {
+
+                border: 1px solid #cccccc;
+
+            }
+
+            .swipe__element-default {
+
+                background-color: yellow;
+                border: 1px solid red;
+                height: 200px;
+                padding: 20px;
+            }
+
+        </style>
+
+    </head>
+
+    <body>
+
+        <div class="siwpe">
+
+            <p>
+
+                Swipe.js add the swipe functinality to the DOM elements.
+
+            </p>
+
+            <code>
+
+                var el = $('div.class');
+                el.swipe(function(direction, offset, status){
+
+                    ...
+
+                });
+
+            </code>
+
+            <p>
+
+                Drag the mouse on the yellow box below in mobile view.
+
+            </p>
+
+
+            <div class="swipe__element-default"></div>
+
+            <div class="swipe__element-default"></div>
+
+        </div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="js/swipe.js"></script>
+        <script>
+
+            $(document).ready(function(){
+
+                var el = $('.swipe__element-default');
+
+                el.swipe(function(event, direction, offset, eventStatus){
+
+                    var directions  = 'directionX: ' + direction.x + '<br>directionY: ' + direction.y,
+                        offset      = '<br>offsetX: ' + offset.x + '<br>offsetY: ' + offset.y,
+                        eventStatus = '<br>event: ' + eventStatus.event;
+
+                    $(event.currentTarget).html(directions + offset + eventStatus);
+
+                });
+
+            })
+
+        </script>
+    </body>
+
+</html>
