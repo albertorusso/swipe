@@ -1,0 +1,28 @@
+{
+  "name": "swipe",
+  "version": "1.0.0",
+  "description": "Swipe Library - Alberto Russo",
+  "main": "index.html",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-serve": "^1.4.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/albertorusso/swipe.git"
+  },
+  "keywords": [
+    "Swipe",
+    "library"
+  ],
+  "author": "Alberto Russo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/albertorusso/swipe/issues"
+  },
+  "homepage": "https://github.com/albertorusso/swipe#readme"
+}
