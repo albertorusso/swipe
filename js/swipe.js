@@ -96,7 +96,6 @@
             status.touchDown = false;
             status.position = null;
 
-            // return callback.call(this, info.direction, info.offset, info.status)
             callback(event, info.direction, info.offset, info.status);
 
         });
@@ -113,7 +112,6 @@
 
             info = swipeInfo(event);
 
-            // return callback.call(this, info.direction, info.offset, info.status)
             callback(event, info.direction, info.offset, info.status);
 
         });
